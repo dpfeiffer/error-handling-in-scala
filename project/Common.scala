@@ -8,6 +8,7 @@ object Common extends AutoPlugin {
   override lazy val projectSettings = Seq(
     organization := "com.github.dpfeiffer",
     scalaVersion := "2.12.2",
+    scalacOptions += "-Xfatal-warnings",
     scalacOptions ++= Seq(
       "-encoding",
       "UTF-8",
@@ -15,7 +16,6 @@ object Common extends AutoPlugin {
       "-unchecked",
       "-deprecation",
       "-Xfatal-warnings",
-      "-Xlint",
       "-Yno-adapted-args",
       "-Ywarn-dead-code",
       "-Xfuture"
